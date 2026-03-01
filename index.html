@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -8,57 +10,61 @@
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
     <header class="main-header">
-    <div class="header-container"> 
-        <div class="header-logo">
-            <h1>Adrian M&M</h1>
-        </div>
+        <div class="header-container"> 
+            <div class="header-logo">
+                <h1>Adrian M&M</h1>
+            </div>
         
-        <div class="header-actions" style="display: flex; gap: 10px;">
-            <div class="dropdown">
-                <button class="dropbtn" onclick="toggleMenu()">Catálogo ▼</button>
-                <div id="categoryMenu" class="dropdown-content">
-                    <a href="#sala" onclick="toggleMenu()">🛋️  Sala</a>
-                    <a href="#cocina" onclick="toggleMenu()">🪑  Cocina</a>
-                    <a href="#alcoba" onclick="toggleMenu()">🛏️  Alcoba</a>
-                    <a href="#oficina" onclick="toggleMenu()">💼  Oficina</a>
-                    <a href="#paletacolores" onclick="toggleMenu">🎨  Paleta de colores</a>
+            <div class="header-actions" style="display: flex; gap: 10px;">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleMenu()">Catálogo ▼</button>
+                    <div id="categoryMenu" class="dropdown-content">
+                        <a href="#sala" onclick="toggleMenu()">🛋️  Sala</a>
+                        <a href="#cocina" onclick="toggleMenu()">🪑  Cocina</a>
+                        <a href="#alcoba" onclick="toggleMenu()">🛏️  Alcoba</a>
+                        <a href="#oficina" onclick="toggleMenu()">💼  Oficina</a>
+                        <a href="#paletacolores" onclick="toggleMenu()">🎨  Paleta de colores</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="dropdown">
-                <button class="dropbtn" onclick="toggleAjustes()">⚙️ Ajustes</button>
-                <div id="ajustesMenu" class="dropdown-content">
-                    <a href="javascript:void(0)" onclick="setModo('oscuro')">🌙 Modo Oscuro</a>
-                    <a href="javascript:void(0)" onclick="setModo('claro')">☀️ Modo Claro</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleAjustes()">⚙️ Ajustes</button>
+                    <div id="ajustesMenu" class="dropdown-content">
+                        <a href="javascript:void(0)" onclick="setModo('oscuro')">🌙 Modo Oscuro</a>
+                        <a href="javascript:void(0)" onclick="setModo('claro')">☀️ Modo Claro</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div> 
-</header>
+        </div> 
+    </header>
+
+
 
     <main class="content-wrapper">
         <section class="hero-section">
-        <div class="hero-text">
-           <span class="badge">Calidad Artesanal</span>
-               <h1>Diseñamos el espacio de <span class="gradient-text">tus sueños</span></h1>
-               <p>Muebles exclusivos fabricados a medida para transformar cada rincón de tu hogar en una experiencia de lujo y confort.</p>
-               <div class="hero-btns">
-                  <a href="#sala" class="btn-primary">Ver Catálogo</a>
-                  <a href="#whatsapp-form" class="btn-secondary">Cotizar Ahora</a>
-               </div>
-        </div>
+            <div class="hero-text">
+               <span class="badge">Calidad Artesanal</span>
+                <h1>Diseñamos el espacio de <span class="gradient-text">tus sueños</span></h1>
+                <p>Muebles exclusivos fabricados a medida para transformar cada rincón de tu hogar en una experiencia de lujo y confort.</p>
+                <div class="hero-btns">
+                    <a href="#sala" class="btn-primary">Ver Catálogo</a>
+                    <a href="#whatsapp-form" class="btn-secondary">Cotizar Ahora</a>
+                </div>
+            </div>
 
     
 
-       <div class="hero-visual">
-           <div class="blob-shape shape-1"></div>
-            <div class="blob-shape shape-2"></div>
-            <div class="hero-image-container">
-               <img src="1.jpg" alt="Mueble Destacado" class="floating-img">
-           </div>
-        </div>
+            <div class="hero-visual">
+                <div class="blob-shape shape-1"></div>
+                <div class="blob-shape shape-2"></div>
+                <div class="hero-image-container">
+                   <img src="1.jpg" alt="Mueble Destacado" class="floating-img">
+                </div>
+            </div>
         </section>
         
         
@@ -66,201 +72,821 @@
             <h2 style="font-size: 2.5rem; font-weight: 900;">Nuestro <span class="gradient-text">Proceso</span></h2>
             <p style="opacity: 0.7;">De la idea a la realidad en tres pasos maestros</p>
 
-        <div class="proceso-grid">
-        <div class="proceso-card">
-            <span class="proceso-icon">📐</span>
-            <h3>Diseño</h3>
-            <p>Bocetamos tu idea y creamos planos a medida, asegurando que cada milímetro aproveche tu espacio al máximo.</p>
-        </div>
+            <div class="proceso-grid">
+                <div class="proceso-card">
+                    <span class="proceso-icon">📐</span>
+                    <h3>Diseño</h3>
+                    <p>Bocetamos tu idea y creamos planos a medida, asegurando que cada milímetro aproveche tu espacio al máximo.</p>
+                </div>
 
-        <div class="proceso-card">
-            <span class="proceso-icon">🪵</span>
-            <h3>Material</h3>
-            <p>Seleccionamos madera de alta calidad y materiales premium para garantizar durabilidad y un acabado impecable.</p>
-        </div>
+                <div class="proceso-card">
+                    <span class="proceso-icon">🪵</span>
+                    <h3>Material</h3>
+                    <p>Seleccionamos madera de alta calidad y materiales premium para garantizar durabilidad y un acabado impecable.</p>
+                </div>
 
-        <div class="proceso-card">
-            <span class="proceso-icon">✨</span>
-            <h3>Entrega</h3>
-            <p>Realizamos una instalación premium en tu hogar, cuidando cada detalle para que el resultado sea perfecto.</p>
-        </div>
-        </div>
+                <div class="proceso-card">
+                    <span class="proceso-icon">✨</span>
+                    <h3>Entrega</h3>
+                    <p>Realizamos una instalación premium en tu hogar, cuidando cada detalle para que el resultado sea perfecto.</p>
+                </div>
+            </div>
         </section>
 
 
 
         <section class="explore-banner">
-           <div class="explore-content">
-           <div class="explore-text">
-               <span class="mini-label">Catálogo 2026</span>
-               <h2>Explora nuestras categorías exclusivas</h2>
-               <p>Diseños únicos pensados para tu comodidad y estilo.</p>
-            </div>
-            <div class="explore-action">
-            <a href="#sala" class="explore-btn-new">Ver Portafolio ↓</a>
-            </div>
+            <div class="explore-content">
+                <div class="explore-text">
+                    <span class="mini-label">Catálogo 2026</span>
+                    <h2>Explora nuestras categorías exclusivas</h2>
+                    <p>Diseños únicos pensados para tu comodidad y estilo.</p>
+                </div>
+                <div class="explore-action">
+                    <a href="#sala" class="explore-btn-new">Ver Portafolio ↓</a>
+                </div>
             </div>
         </section>
 
 
-        <div class="section-divider" id="sala">
+
+
+
+        <!----------------->
+        <!--- CATEGORÍAS--->
+        <!----------------->
+
+
+
+
+        <!---CATEGORÍA SALA--->
+
+        <div class="section-divider">
+            <button class="slider-btn mobile-only" onclick="moveSlide(-1, 'slider-sala')">‹</button>
             <h2>Muebles de Sala</h2>
-            <div class="glow-line"></div>
+            <button class="slider-btn mobile-only" onclick="moveSlide(1, 'slider-sala')">›</button>
         </div>
-        <div class="gallery-wrapper">
+
+        <div class="gallery-wrapper image-slider">
             <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-sala')">&#10094;</button>
             <ul class="container" id="slider-sala">
                 <li class="active">
                     <img src="1.jpg" alt="">
                     <div class="content">
                         <span>
-                            <h2>Sofá Minimal</h2>
+                            <h2>Sofá 1</h2>
                             <p>Calidad premium.</p>
-                            <a href="javascript:void(0)" onclick="verFotos('detalles-sala')" class="view-real-work">Trabajos realizados →</a>
+                            <a href="javascript:void(0)" onclick="verFotos('detalles-sala1')" class="view-real-work">Trabajos realizados →</a>
                         </span>
                     </div>
                 </li>
                 <li class="active">
                     <img src="2.jpg" alt="">
-                    <div class="content"><span><h2>Sofá Minimal</h2><p>Calidad premium.</p></span></div>
+                    <div class="content">
+                        <span>
+                            <h2>Sofá 2</h2>
+                            <p>Calidad premium.</p>
+                            <a href="javascript:void(0)" onclick="verFotos('detalles-sala2')" class="view-real-work">Trabajos realizados →</a>
+                        </span>
+                    </div>
                 </li>
                 <li class="active">
                     <img src="3.jpg" alt="">
-                    <div class="content"><span><h2>Sofá Minimal</h2><p>Calidad premium.</p></span></div>
+                    <div class="content">
+                        <span>
+                            <h2>Sofá 3</h2>
+                            <p>Calidad premium.</p>
+                            <a href="javascript:void(0)" onclick="verFotos('detalles-sala3')" class="view-real-work">Trabajos realizados →</a>
+                        </span>
+                    </div>
                 </li>
             </ul>
             <button class="nav-btn next" onclick="moveSlide(1, 'slider-sala')">&#10095;</button>
         </div>
         
-        <div id="detalles-sala" class="project-overlay" style="display: none;">
-        <div class="project-header">
-        <h3>Instalaciones Reales de Salas</h3>
-        <button class="close-btn" onclick="cerrarFotos('detalles-sala', 'sala')">✖ Cerrar y volver</button>
-         </div>
-        <div class="gallery-wrapper">
-        <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-sala')">&#10094;</button>
-        <ul class="container" id="slider-proyectos-sala">
-            <li class="active">
-                <img src="1.jpg" alt="">
-                <div class="content"><span><h2>Resultado Final</h2><p>Cliente en Bogotá</p></span></div>
-            </li>
-            <li>
-                <img src="5.jpg" alt="">
-                <div class="content"><span><h2>Detalles</h2><p>Acabados premium</p></span></div>
-            </li>
-            <li>
-                <img src="7.jpg" alt="">
-            </li>
-        </ul>
-        <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-sala')">&#10095;</button>
+        <div id="detalles-sala1" class="project-overlay" style="display: none;">
+            <div class="project-header">
+                <h3>Instalaciones de Salas 1</h3>
+                <button class="close-btn" onclick="cerrarFotos('detalles-sala1', 'sala')">✖ Cerrar</button>
+            </div>
+            <div class="gallery-wrapper">
+                <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-sala1')">&#10094;</button>
+                <ul class="container" id="slider-proyectos-sala1">
+                    <li class="active">
+                        <img src="1.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Resultado Final</h2>
+                                <p>Cliente en Bogotá</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="5.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="7.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-sala1')">&#10095;</button>
+            </div>
         </div>
+
+
+
+        <div id="detalles-sala2" class="project-overlay" style="display: none;">
+            <div class="project-header">
+                <h3>Instalaciones de Salas 2</h3>
+                <button class="close-btn" onclick="cerrarFotos('detalles-sala2', 'sala')">✖ Cerrar</button>
+            </div>
+            <div class="gallery-wrapper">
+                <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-sala2')">&#10094;</button>
+                <ul class="container" id="slider-proyectos-sala2">
+                    <li class="active">
+                        <img src="1.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Resultado Final</h2>
+                                <p>Cliente en Bogotá</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="5.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="7.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-sala2')">&#10095;</button>
+            </div>
+        </div>
+
+        <div id="detalles-sala3" class="project-overlay" style="display: none;">
+            <div class="project-header">
+                <h3>Instalaciones de Salas 1</h3>
+                <button class="close-btn" onclick="cerrarFotos('detalles-sala3', 'sala')">✖ Cerrar</button>
+            </div>
+            <div class="gallery-wrapper">
+                <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-sala3')">&#10094;</button>
+                <ul class="container" id="slider-proyectos-sala3">
+                    <li class="active">
+                        <img src="1.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Resultado Final</h2>
+                                <p>Cliente en Bogotá</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="5.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="7.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-sala3')">&#10095;</button>
+            </div>
         </div>
 
 
 
 
-        <div class="section-divider" id="cocina">
-            <h2>Cocinas</h2>
-            <div class="glow-line"></div>
+
+
+        <!---MUEBLES PARA COCINA--->
+
+
+        <div class="section-divider">
+            <button class="slider-btn mobile-only" onclick="moveSlide(-1, 'slider-cocina')">‹</button>
+            <h2>Muebles para cocina</h2>
+            <button class="slider-btn mobile-only" onclick="moveSlide(1, 'slider-cocina')">›</button>
         </div>
         <div class="gallery-wrapper">
             <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-cocina')">&#10094;</button>
             <ul class="container" id="slider-cocina">
                 <li class="active">
                     <img src="4.jpg" alt="">
-                    <div class="content"><span><h2>Mesa Zen</h2><p>Diseño exclusivo.</p></span></div>
+                    <div class="content">
+                        <span>
+                            <h2>Mesa Zen</h2>
+                            <p>Diseño exclusivo.</p>
+                            <a href="javascript:void(0)" onclick="verFotos('detalles-cocina1')" class="view-real-work">Trabajos realizados →</a>
+                        </span>
+                    </div>
                 </li>
                 <li class="active">
                     <img src="5.jpg" alt="">
-                    <div class="content"><span><h2>Mesa Zen</h2><p>Diseño exclusivo.</p></span></div>
+                    <div class="content">
+                        <span>
+                            <h2>Mesa Zen</h2>
+                            <p>Diseño exclusivo.</p>
+                            <a href="javascript:void(0)" onclick="verFotos('detalles-cocina2')" class="view-real-work">Trabajos realizados →</a>
+                        </span>
+                    </div>
+                </li>
+                <li class="active">
+                    <img src="1.jpg" alt="">
+                    <div class="content">
+                        <span>
+                            <h2>Mesa Zen</h2>
+                            <p>Diseño exclusivo.</p>
+                            <a href="javascript:void(0)" onclick="verFotos('detalles-cocina3')" class="view-real-work">Trabajos realizados →</a>
+                        </span>
+                    </div>
                 </li>
             </ul>
             <button class="nav-btn next" onclick="moveSlide(1, 'slider-cocina')">&#10095;</button>
         </div>
 
 
-        <div class="section-divider" id="alcoba">
-            <h2>Muebles para habitación</h2>
-            <div class="glow-line"></div>
+        <!--VER FOTOS-->
+
+        <div id="detalles-cocina1" class="project-overlay" style="display: none;">
+            <div class="project-header">
+                <h3>Instalaciones de Meza 1</h3>
+                <button class="close-btn" onclick="cerrarFotos('detalles-cocina1', 'cocina')">✖ Cerrar</button>
+            </div>
+            <div class="gallery-wrapper">
+                <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-cocina1')">&#10094;</button>
+                <ul class="container" id="slider-proyectos-cocina1">
+                    <li class="active">
+                        <img src="1.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Resultado Final</h2>
+                                <p>Cliente en Bogotá</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="5.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="7.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-cocina1')">&#10095;</button>
+            </div>
+        </div>
+
+
+        <div id="detalles-cocina2" class="project-overlay" style="display: none;">
+            <div class="project-header">
+                <h3>Instalaciones de Meza 1</h3>
+                <button class="close-btn" onclick="cerrarFotos('detalles-cocina2', 'cocina')">✖ Cerrar</button>
+            </div>
+            <div class="gallery-wrapper">
+                <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-cocina2')">&#10094;</button>
+                <ul class="container" id="slider-proyectos-cocina2">
+                    <li class="active">
+                        <img src="1.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Resultado Final</h2>
+                                <p>Cliente en Bogotá</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="5.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="7.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-cocina2')">&#10095;</button>
+            </div>
+        </div>
+
+        <div id="detalles-cocina3" class="project-overlay" style="display: none;">
+            <div class="project-header">
+                <h3>Instalaciones de Meza 1</h3>
+                <button class="close-btn" onclick="cerrarFotos('detalles-cocina3', 'cocina')">✖ Cerrar</button>
+            </div>
+            <div class="gallery-wrapper">
+                <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-cocina3')">&#10094;</button>
+                <ul class="container" id="slider-proyectos-cocina3">
+                    <li class="active">
+                        <img src="1.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Resultado Final</h2>
+                                <p>Cliente en Bogotá</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="5.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="7.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-cocina3')">&#10095;</button>
+            </div>
+        </div>
+
+
+
+
+
+        <!---MUEBLES DE ALCOBA--->
+
+        <div class="section-divider">
+            <button class="slider-btn mobile-only" onclick="moveSlide(-1, 'slider-alcoba')">‹</button>
+            <h2>Muebles para alcoba</h2>
+            <button class="slider-btn mobile-only" onclick="moveSlide(1, 'slider-alcoba')">›</button>
         </div>
         <div class="gallery-wrapper">
             <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-alcoba')">&#10094;</button>
             <ul class="container" id="slider-alcoba">
                 <li class="active">
                     <img src="1.jpg" alt="">
-                    <div class="content"><span><h2>Sofá Minimal</h2><p>Calidad premium.</p></span></div>
+                    <div class="content">
+                        <span>
+                            <h2>Sofá 1</h2>
+                            <p>Calidad premium.</p>
+                            <a href="javascript:void(0)" onclick="verFotos('detalles-alcoba1')" class="view-real-work">Trabajos realizados →</a>
+                        </span>
+                    </div>
                 </li>
                 <li class="active">
                     <img src="2.jpg" alt="">
-                    <div class="content"><span><h2>Sofá Minimal</h2><p>Calidad premium.</p></span></div>
+                    <div class="content">
+                        <span>
+                            <h2>Sofá 1</h2>
+                            <p>Calidad premium.</p>
+                            <a href="javascript:void(0)" onclick="verFotos('detalles-alcoba2')" class="view-real-work">Trabajos realizados →</a>
+                        </span>
+                    </div>
                 </li>
                 <li class="active">
                     <img src="3.jpg" alt="">
-                    <div class="content"><span><h2>Sofá Minimal</h2><p>Calidad premium.</p></span></div>
+                    <div class="content">
+                        <span>
+                            <h2>Sofá 1</h2>
+                            <p>Calidad premium.</p>
+                            <a href="javascript:void(0)" onclick="verFotos('detalles-alcoba3')" class="view-real-work">Trabajos realizados →</a>
+                        </span>
+                    </div>
                 </li>
             </ul>
             <button class="nav-btn next" onclick="moveSlide(1, 'slider-alcoba')">&#10095;</button>
         </div>
 
+        <div id="detalles-alcoba1" class="project-overlay" style="display: none;">
+            <div class="project-header">
+                <h3>Instalaciones de Alcoba</h3>
+                <button class="close-btn" onclick="cerrarFotos('detalles-alcoba1', 'alcoba')">✖ Cerrar</button>
+            </div>
+            <div class="gallery-wrapper">
+                <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-alcoba1')">&#10094;</button>
+                <ul class="container" id="slider-proyectos-alcoba1">
+                    <li class="active">
+                        <img src="1.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Resultado Final</h2>
+                                <p>Cliente en Bogotá</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="5.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="7.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-alcoba1')">&#10095;</button>
+            </div>
+        </div>
 
-        <div class="section-divider" id="oficina"> 
-            <h2>Muebles de Oficina</h2>
-            <div class="glow-line"></div>
+        <div id="detalles-alcoba2" class="project-overlay" style="display: none;">
+            <div class="project-header">
+                <h3>Instalaciones de alcoba</h3>
+                <button class="close-btn" onclick="cerrarFotos('detalles-alcoba2', 'alcoba')">✖ Cerrar</button>
+            </div>
+            <div class="gallery-wrapper">
+                <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-alcoba2')">&#10094;</button>
+                <ul class="container" id="slider-proyectos-alcoba2">
+                    <li class="active">
+                        <img src="1.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Resultado Final</h2>
+                                <p>Cliente en Bogotá</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="5.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="7.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-alcoba2')">&#10095;</button>
+            </div>
+        </div>
+
+        <div id="detalles-alcoba3" class="project-overlay" style="display: none;">
+            <div class="project-header">
+                <h3>Instalaciones de alcoba</h3>
+                <button class="close-btn" onclick="cerrarFotos('detalles-alcoba3', 'alcoba')">✖ Cerrar</button>
+            </div>
+            <div class="gallery-wrapper">
+                <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-alcoba3')">&#10094;</button>
+                <ul class="container" id="slider-proyectos-alcoba3">
+                    <li class="active">
+                        <img src="1.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Resultado Final</h2>
+                                <p>Cliente en Bogotá</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="5.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="7.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-alcoba3')">&#10095;</button>
+            </div>
+        </div>
+
+
+
+
+        <!---MUBELES DE OFICINA--->
+
+        <div class="section-divider">
+            <button class="slider-btn mobile-only" onclick="moveSlide(-1, 'slider-oficina')">‹</button>
+            <h2>Muebles de oficina</h2>
+            <button class="slider-btn mobile-only" onclick="moveSlide(1, 'slider-oficina')">›</button>
         </div>
         <div class="gallery-wrapper">
             <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-oficina')">&#10094;</button>
             <ul class="container" id="slider-oficina"> 
                 <li class="active">
                     <img src="5.jpg" alt="Escritorio">
-                    <div class="content"><span><h2>Escritorio Pro</h2><p>Madera maciza.</p></span></div>
+                    <div class="content">
+                        <span>
+                            <h2>Escritorio Pro</h2>
+                            <p>Madera maciza.</p>
+                            <a href="javascript:void(0)" onclick="verFotos('detalles-oficina1')" class="view-real-work">Trabajos realizados →</a>
+                        </span>
+                    </div>
                 </li>
                 <li>
                     <img src="2.jpg" alt="Silla">
-                    <div class="content"><span><h2>Silla Ergo</h2><p>Máximo soporte.</p></span></div>
+                    <div class="content">
+                        <span>
+                            <h2>Silla Ergo</h2>
+                            <p>Máximo soporte.</p>
+                            <a href="javascript:void(0)" onclick="verFotos('detalles-oficina2')" class="view-real-work">Trabajos realizados →</a>
+                        </span>
+                    </div>
                 </li>
             </ul>
             <button class="nav-btn next" onclick="moveSlide(1, 'slider-oficina')">&#10095;</button>
         </div>
 
+        <div id="detalles-oficina1" class="project-overlay" style="display: none;">
+            <div class="project-header">
+                <h3>Instalaciones de alcoba</h3>
+                <button class="close-btn" onclick="cerrarFotos('detalles-oficina1', 'oficina')">✖ Cerrar</button>
+            </div>
+            <div class="gallery-wrapper">
+                <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-oficina1')">&#10094;</button>
+                <ul class="container" id="slider-proyectos-oficina1">
+                    <li class="active">
+                        <img src="1.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Resultado Final</h2>
+                                <p>Cliente en Bogotá</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="5.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="7.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-oficina1')">&#10095;</button>
+            </div>
+        </div>
 
-        <div class="section-divider" id="paletacolores">
+        <div id="detalles-oficina2" class="project-overlay" style="display: none;">
+            <div class="project-header">
+                <h3>Instalaciones de alcoba</h3>
+                <button class="close-btn" onclick="cerrarFotos('detalles-oficina2', 'oficina')">✖ Cerrar</button>
+            </div>
+            <div class="gallery-wrapper">
+                <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-oficina2')">&#10094;</button>
+                <ul class="container" id="slider-proyectos-oficina2">
+                    <li class="active">
+                        <img src="1.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Resultado Final</h2>
+                                <p>Cliente en Bogotá</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="5.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="7.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-oficina2')">&#10095;</button>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!---PALETA DE COLORES--->
+
+        <div class="section-divider">
+            <button class="slider-btn mobile-only" onclick="moveSlide(-1, 'slider-paletacolores')">‹</button>
             <h2>Paleta de colores</h2>
-            <div class="glow-line"></div>
+            <button class="slider-btn mobile-only" onclick="moveSlide(1, 'slider-paletacolores')">›</button>
         </div>
         <div class="gallery-wrapper">
             <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-paletacolores')">&#10094;</button>
             <ul class="container" id="slider-paletacolores">
                 <li class="active">
                     <img src="4.jpg" alt="">
-                    <div class="content"><span><h2>Color 1</h2><p>Diseño exclusivo.</p></span></div>
+                    <div class="content">
+                        <span>
+                            <h2>Color 1</h2>
+                            <p>Diseño exclusivo.</p>
+                            <a href="javascript:void(0)" onclick="verFotos('detalles-color1')" class="view-real-work">Trabajos realizados →</a>
+                        </span>
+                    </div>
                 </li>
                 <li class="active">
                     <img src="5.jpg" alt="">
-                    <div class="content"><span><h2>Color 2</h2><p>Diseño exclusivo.</p></span></div>
+                    <div class="content">
+                        <span>
+                            <h2>Color 2</h2>
+                            <p>Diseño exclusivo.</p>
+                            <a href="javascript:void(0)" onclick="verFotos('detalles-color2')" class="view-real-work">Trabajos realizados →</a>
+                        </span>
+                    </div>
                 </li>
             </ul>
             <button class="nav-btn next" onclick="moveSlide(1, 'slider-paletacolores')">&#10095;</button>
         </div>
 
+        <div id="detalles-color1" class="project-overlay" style="display: none;">
+            <div class="project-header">
+                <h3>Instalaciones de alcoba</h3>
+                <button class="close-btn" onclick="cerrarFotos('detalles-color1', 'color')">✖ Cerrar</button>
+            </div>
+            <div class="gallery-wrapper">
+                <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-color1')">&#10094;</button>
+                <ul class="container" id="slider-proyectos-color1">
+                    <li class="active">
+                        <img src="1.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Resultado Final</h2>
+                                <p>Cliente en Bogotá</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="5.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="7.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-color1')">&#10095;</button>
+            </div>
+        </div>
 
-         <section class="stats-banner">
+        <div id="detalles-color2" class="project-overlay" style="display: none;">
+            <div class="project-header">
+                <h3>Instalaciones color 2</h3>
+                <button class="close-btn" onclick="cerrarFotos('detalles-color2', 'color')">✖ Cerrar</button>
+            </div>
+            <div class="gallery-wrapper">
+                <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-color2')">&#10094;</button>
+                <ul class="container" id="slider-proyectos-color2">
+                    <li class="active">
+                        <img src="1.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Resultado Final</h2>
+                                <p>Cliente en Bogotá</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="5.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="7.jpg" alt="">
+                        <div class="content">
+                            <span>
+                                <h2>Detalles</h2>
+                                <p>Acabados premium</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-color2')">&#10095;</button>
+            </div>
+        </div>
+
+
+
+        <!---PARTE DE ESTADISTICAS--->
+
+        <section class="stats-banner">
             <div class="stats-container">
-            <div class="stat-item">
-                <h2>+150</h2>
-                <p>Proyectos Entregados</p>
-            </div>
-            <div class="stat-item">
-                <h2>10</h2>
-                <p>Años de Experiencia</p>
-            </div>
-            <div class="stat-item">
-                <h2>100%</h2>
-                <p>Clientes Satisfechos</p>
-            </div>
+                <div class="stat-item">
+                    <h2>+150</h2>
+                    <p>Proyectos Entregados</p>
+                </div>
+                <div class="stat-item">
+                    <h2>+10</h2>
+                    <p>Años de Experiencia</p>
+                </div>
+                <div class="stat-item">
+                    <h2>100%</h2>
+                    <p>Clientes Satisfechos</p>
+                </div>
             </div>
         </section>
 
 
+        <!---ICONO WHATSAPP--->
 
         <form class="glass-card" id="whatsapp-form">
             <h3>Contáctanos</h3>
@@ -271,6 +897,10 @@
             <textarea id="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
             <button type="button" onclick="sendToWhatsApp()">Enviar Mensaje</button>
         </form>
+
+
+        <!---PARTE FINAL--->
+
         <footer style="padding: 40px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); width: 100%;">
             <p style="color: rgba(255,255,255,0.5); font-size: 1rem;">
                 © 2026 Adrian M&M - Carpintería de Diseño. <br>
@@ -280,41 +910,40 @@
                 <a href="#" style="color: #00dbde; margin: 0 10px; text-decoration: none;">Instagram</a>
                 <a href="#" style="color: #fc00ff; margin: 0 10px; text-decoration: none;">Facebook</a>
             </div>
-            </footer>
+        </footer>
     </main>
 
     <script>
 
         function verFotos(idSeccion) {
-        const seccion = document.getElementById(idSeccion);
-        seccion.style.display = "block"; // Muestra las fotos
-        seccion.scrollIntoView({ behavior: 'smooth' }); // Te lleva suavemente a ellas
+            const seccion = document.getElementById(idSeccion);
+            seccion.style.display = "block"; // Muestra las fotos
+            seccion.scrollIntoView({ behavior: 'smooth' }); // Te lleva suavemente a ellas
         }
 
         function cerrarFotos(idSeccion, idCategoria) {
-        const seccion = document.getElementById(idSeccion);
-        seccion.style.display = "none"; // Oculta las fotos
-    
-        // Te devuelve a la categoría principal (Sala, Comedor, etc.)
-        document.getElementById(idCategoria).scrollIntoView({ behavior: 'smooth' });
-        }
-        function toggleMenu() {
-        document.getElementById("categoryMenu").classList.toggle("show");
+            const seccion = document.getElementById(idSeccion);
+            seccion.style.display = "none";
+            document.getElementById(idCategoria).scrollIntoView({ behavior: 'smooth' });
         }
 
-       // Cerrar el menú si el usuario hace clic fuera de él
-       window.onclick = function(event) {
-       if (!event.target.matches('.dropbtn')) {
-         var dropdowns = document.getElementsByClassName("dropdown-content");
-         for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+        function toggleMenu() {
+            document.getElementById("categoryMenu").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    }
+                }
             }
         }
-    }
-}
-        // Función para mover cada galería por separado
+
+
         function moveSlide(direction, sliderId) {
             const slider = document.getElementById(sliderId);
             const slides = slider.querySelectorAll('li');
@@ -330,65 +959,59 @@
 
         // Función para WhatsApp
         function sendToWhatsApp() {
-          const nombre = document.getElementById('nombre').value;
-          const mensaje = document.getElementById('mensaje').value;
+            const nombre = document.getElementById('nombre').value;
+            const mensaje = document.getElementById('mensaje').value;
+            if(!nombre || !mensaje) {
+            alert("Por favor, llena tu nombre y el mensaje antes de enviar.");
+            return;
+            }
     
-        if(!nombre || !mensaje) {
-           alert("Por favor, llena tu nombre y el mensaje antes de enviar.");
-        return;
+            const miNumero = "573136317803"; 
+            const texto = `Hola Adrián, soy ${nombre}. Consulta: ${mensaje}`;
+            window.open(`https://wa.me/${miNumero}?text=${encodeURIComponent(texto)}`, '_blank');
         }
-    
-        const miNumero = "573136317803"; 
-        const texto = `Hola Adrián, soy ${nombre}. Consulta: ${mensaje}`;
-        window.open(`https://wa.me/${miNumero}?text=${encodeURIComponent(texto)}`, '_blank');
-     }
 
         window.addEventListener('scroll', () => {
-        const reveals = document.querySelectorAll('.section-divider, .gallery-wrapper, .glass-card');
-        reveals.forEach(el => {
-        const windowHeight = window.innerHeight;
-        const revealTop = el.getBoundingClientRect().top;
-        if (revealTop < windowHeight - 100) {
-            el.classList.add('active');
+            const reveals = document.querySelectorAll('.section-divider, .gallery-wrapper, .glass-card');
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const revealTop = el.getBoundingClientRect().top;
+                if (revealTop < windowHeight - 100) {
+                    el.classList.add('active');
+                }
+            });
+        });
+
+        window.dispatchEvent(new Event('scroll'));
+        function toggleAjustes() {
+            document.getElementById("ajustesMenu").classList.toggle("show");
         }
-        });
-        });
-        // Ejecutar una vez al cargar para lo que ya está en pantalla
-         window.dispatchEvent(new Event('scroll'));
+
+        function setModo(modo) {
+            if (modo === 'claro') {
+                document.body.classList.add('light-mode');
+            } else {
+                document.body.classList.remove('light-mode');
+            }
+            toggleAjustes();
+        }
 
 
-         // Función para abrir/cerrar el menú de ajustes
-function toggleAjustes() {
-    document.getElementById("ajustesMenu").classList.toggle("show");
-}
-
-// Función para cambiar el modo
-function setModo(modo) {
-    if (modo === 'claro') {
-        document.body.classList.add('light-mode');
-    } else {
-        document.body.classList.remove('light-mode');
-    }
-    // Cerramos el menú después de elegir
-    toggleAjustes();
-}
-
-// Cerrar menús si se hace clic fuera de ellos
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
             }
         }
-    }
-}
     </script>
 
     <a href="https://wa.me/573136317803" class="whatsapp-float" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="width:30px;">
-</a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="width:30px;">
+    </a>
 </body>
 </html>

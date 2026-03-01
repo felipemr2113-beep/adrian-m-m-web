@@ -821,7 +821,7 @@ right: 10px !important;
 .stats-banner {
     width: 100vw;
     position: relative;
-    left: 50%;
+    left: 55%;
     transform: translateX(-50%);
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(10px);
@@ -1238,5 +1238,83 @@ body.light-mode textarea {
         height: 300px !important; /* Altura fija para que todas se vean iguales */
         position: relative !important;
         flex-shrink: 0; /* Evita que se aplasten */
+    }
+}
+
+/* ================================
+   BOTONES ARRIBA SOLO EN MOBILE
+   ================================ */
+
+/* Ocultos en PC */
+.mobile-nav {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .title-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .mobile-nav {
+        display: flex;
+        gap: 10px;
+    }
+
+    /* Convertimos los botones en versión compacta */
+    .mobile-nav .nav-btn {
+        position: static !important;
+        transform: none !important;
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 18px !important;
+    }
+
+    /* Ocultamos los botones flotantes */
+    .gallery-wrapper .nav-btn {
+        display: none !important;
+    }
+}
+
+/* ===== BOTONES MOBILE OCULTOS POR DEFECTO ===== */
+.mobile-only {
+    display: none;
+}
+
+/* ===== SOLO MOBILE ===== */
+@media (max-width: 768px) {
+
+    /* Oculta flechas que están sobre imágenes */
+    .image-slider .slider-btn:not(.mobile-only) {
+        display: none;
+    }
+
+    /* Muestra flechas del título */
+    .mobile-only {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Alinea título + flechas */
+    .section-divider {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .section-divider h2 {
+        flex: 1;
+        text-align: center;
+    }
+
+    .section-divider .slider-btn {
+        position: static;
+        transform: none;
     }
 }
