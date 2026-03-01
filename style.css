@@ -1,3 +1,14 @@
+/* Evita que cualquier elemento "infle" la pantalla hacia los lados */
+html, body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+    position: relative !important;
+}
+
+* {
+    box-sizing: border-box !important; /* Asegura que el padding no sume ancho extra */
+}
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -1088,4 +1099,101 @@ body.light-mode .container li .content a:hover {
     color: #ffffff !important;      /* Texto blanco */
     border-color: #1d1d1f !important;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        flex-direction: column; /* Ponemos el logo arriba y botones abajo si es necesario */
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .header-logo h1 {
+        font-size: 1.5rem !important; /* Título más pequeño para que quepa */
+        text-align: center;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: center; /* Botones centrados y juntos */
+        gap: 8px;
+    }
+    
+    .dropbtn {
+        padding: 8px 12px !important;
+        font-size: 11px !important; /* Botones compactos */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95% !important; /* Que no toque los bordes del cel */
+        height: auto !important;
+        min-height: 400px;
+    }
+
+    .container li {
+        width: 100% !important; /* Ocupan todo el ancho disponible */
+        margin-bottom: 20px;
+    }
+
+    .container li img {
+        object-fit: contain !important; /* Asegura que la foto se vea COMPLETA, no estirada */
+    }
+}
+
+/* Recuperar los cuadros de contacto en modo claro */
+body.light-mode .form-container,
+body.light-mode .contact-section,
+body.light-mode form {
+    background: #ffffff !important;
+    border: 1px solid #d1d1d6 !important; /* Borde gris suave visible */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05) !important;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+body.light-mode input, 
+body.light-mode textarea {
+    background: #f2f2f7 !important; /* Fondo grisáceo para los campos */
+    border: 1px solid #c7c7cc !important;
+    color: #000000 !important;
+}
+
+/* --- AJUSTE DE PROCESO PARA MÓVILES --- */
+@media (max-width: 480px) {
+    /* Contenedor principal de las tarjetas */
+    .proceso-grid, .steps-container {
+        display: flex !important;
+        flex-direction: column !important; /* Una debajo de otra */
+        gap: 20px !important;
+        padding: 10px !important;
+    }
+
+    /* La tarjeta de cada paso */
+    .proceso-card, .step-item {
+        padding: 20px !important;
+        text-align: center !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* EL ICONO: Aquí es donde reducimos el tamaño */
+    .proceso-icon, .step-icon, .proceso-card i {
+        font-size: 2rem !important; /* Reducido de 4rem o 5rem a solo 2rem */
+        margin-bottom: 10px !important;
+        display: block !important;
+    }
+
+    /* Títulos de los pasos */
+    .proceso-card h3 {
+        font-size: 1.2rem !important;
+        margin-bottom: 5px !important;
+    }
+
+    /* Descripción de los pasos */
+    .proceso-card p {
+        font-size: 0.9rem !important;
+        line-height: 1.4 !important;
+    }
 }
