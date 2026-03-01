@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Adrian M&M</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+    <div class="header-container"> 
+        <div class="header-logo">
+            <h1>Adrian M&M</h1>
+        </div>
+        
+        <div class="header-actions" style="display: flex; gap: 10px;">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleMenu()">Catálogo ▼</button>
+                <div id="categoryMenu" class="dropdown-content">
+                    <a href="#sala" onclick="toggleMenu()">🛋️  Sala</a>
+                    <a href="#cocina" onclick="toggleMenu()">🪑  Cocina</a>
+                    <a href="#alcoba" onclick="toggleMenu()">🛏️  Alcoba</a>
+                    <a href="#oficina" onclick="toggleMenu()">💼  Oficina</a>
+                    <a href="#paletacolores" onclick="toggleMenu">🎨  Paleta de colores</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleAjustes()">⚙️ Ajustes</button>
+                <div id="ajustesMenu" class="dropdown-content">
+                    <a href="javascript:void(0)" onclick="setModo('oscuro')">🌙 Modo Oscuro</a>
+                    <a href="javascript:void(0)" onclick="setModo('claro')">☀️ Modo Claro</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</header>
+
+    <main class="content-wrapper">
+        <section class="hero-section">
+        <div class="hero-text">
+           <span class="badge">Calidad Artesanal</span>
+               <h1>Diseñamos el espacio de <span class="gradient-text">tus sueños</span></h1>
+               <p>Muebles exclusivos fabricados a medida para transformar cada rincón de tu hogar en una experiencia de lujo y confort.</p>
+               <div class="hero-btns">
+                  <a href="#sala" class="btn-primary">Ver Catálogo</a>
+                  <a href="#whatsapp-form" class="btn-secondary">Cotizar Ahora</a>
+               </div>
+        </div>
+
+    
+
+       <div class="hero-visual">
+           <div class="blob-shape shape-1"></div>
+            <div class="blob-shape shape-2"></div>
+            <div class="hero-image-container">
+               <img src="1.jpg" alt="Mueble Destacado" class="floating-img">
+           </div>
+        </div>
+        </section>
+        
+        
+        <section class="proceso-section">
+            <h2 style="font-size: 2.5rem; font-weight: 900;">Nuestro <span class="gradient-text">Proceso</span></h2>
+            <p style="opacity: 0.7;">De la idea a la realidad en tres pasos maestros</p>
+
+        <div class="proceso-grid">
+        <div class="proceso-card">
+            <span class="proceso-icon">📐</span>
+            <h3>Diseño</h3>
+            <p>Bocetamos tu idea y creamos planos a medida, asegurando que cada milímetro aproveche tu espacio al máximo.</p>
+        </div>
+
+        <div class="proceso-card">
+            <span class="proceso-icon">🪵</span>
+            <h3>Material</h3>
+            <p>Seleccionamos madera de alta calidad y materiales premium para garantizar durabilidad y un acabado impecable.</p>
+        </div>
+
+        <div class="proceso-card">
+            <span class="proceso-icon">✨</span>
+            <h3>Entrega</h3>
+            <p>Realizamos una instalación premium en tu hogar, cuidando cada detalle para que el resultado sea perfecto.</p>
+        </div>
+        </div>
+        </section>
+
+
+
+        <section class="explore-banner">
+           <div class="explore-content">
+           <div class="explore-text">
+               <span class="mini-label">Catálogo 2026</span>
+               <h2>Explora nuestras categorías exclusivas</h2>
+               <p>Diseños únicos pensados para tu comodidad y estilo.</p>
+            </div>
+            <div class="explore-action">
+            <a href="#sala" class="explore-btn-new">Ver Portafolio ↓</a>
+            </div>
+            </div>
+        </section>
+
+
+        <div class="section-divider" id="sala">
+            <h2>Muebles de Sala</h2>
+            <div class="glow-line"></div>
+        </div>
+        <div class="gallery-wrapper">
+            <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-sala')">&#10094;</button>
+            <ul class="container" id="slider-sala">
+                <li class="active">
+                    <img src="1.jpg" alt="">
+                    <div class="content">
+                        <span>
+                            <h2>Sofá Minimal</h2>
+                            <p>Calidad premium.</p>
+                            <a href="javascript:void(0)" onclick="verFotos('detalles-sala')" class="view-real-work">Trabajos realizados →</a>
+                        </span>
+                    </div>
+                </li>
+                <li class="active">
+                    <img src="2.jpg" alt="">
+                    <div class="content"><span><h2>Sofá Minimal</h2><p>Calidad premium.</p></span></div>
+                </li>
+                <li class="active">
+                    <img src="3.jpg" alt="">
+                    <div class="content"><span><h2>Sofá Minimal</h2><p>Calidad premium.</p></span></div>
+                </li>
+            </ul>
+            <button class="nav-btn next" onclick="moveSlide(1, 'slider-sala')">&#10095;</button>
+        </div>
+        
+        <div id="detalles-sala" class="project-overlay" style="display: none;">
+        <div class="project-header">
+        <h3>Instalaciones Reales de Salas</h3>
+        <button class="close-btn" onclick="cerrarFotos('detalles-sala', 'sala')">✖ Cerrar y volver</button>
+         </div>
+        <div class="gallery-wrapper">
+        <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-proyectos-sala')">&#10094;</button>
+        <ul class="container" id="slider-proyectos-sala">
+            <li class="active">
+                <img src="1.jpg" alt="">
+                <div class="content"><span><h2>Resultado Final</h2><p>Cliente en Bogotá</p></span></div>
+            </li>
+            <li>
+                <img src="5.jpg" alt="">
+                <div class="content"><span><h2>Detalles</h2><p>Acabados premium</p></span></div>
+            </li>
+            <li>
+                <img src="7.jpg" alt="">
+            </li>
+        </ul>
+        <button class="nav-btn next" onclick="moveSlide(1, 'slider-proyectos-sala')">&#10095;</button>
+        </div>
+        </div>
+
+
+
+
+        <div class="section-divider" id="cocina">
+            <h2>Cocinas</h2>
+            <div class="glow-line"></div>
+        </div>
+        <div class="gallery-wrapper">
+            <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-cocina')">&#10094;</button>
+            <ul class="container" id="slider-cocina">
+                <li class="active">
+                    <img src="4.jpg" alt="">
+                    <div class="content"><span><h2>Mesa Zen</h2><p>Diseño exclusivo.</p></span></div>
+                </li>
+                <li class="active">
+                    <img src="5.jpg" alt="">
+                    <div class="content"><span><h2>Mesa Zen</h2><p>Diseño exclusivo.</p></span></div>
+                </li>
+            </ul>
+            <button class="nav-btn next" onclick="moveSlide(1, 'slider-cocina')">&#10095;</button>
+        </div>
+
+
+        <div class="section-divider" id="alcoba">
+            <h2>Muebles para habitación</h2>
+            <div class="glow-line"></div>
+        </div>
+        <div class="gallery-wrapper">
+            <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-alcoba')">&#10094;</button>
+            <ul class="container" id="slider-alcoba">
+                <li class="active">
+                    <img src="1.jpg" alt="">
+                    <div class="content"><span><h2>Sofá Minimal</h2><p>Calidad premium.</p></span></div>
+                </li>
+                <li class="active">
+                    <img src="2.jpg" alt="">
+                    <div class="content"><span><h2>Sofá Minimal</h2><p>Calidad premium.</p></span></div>
+                </li>
+                <li class="active">
+                    <img src="3.jpg" alt="">
+                    <div class="content"><span><h2>Sofá Minimal</h2><p>Calidad premium.</p></span></div>
+                </li>
+            </ul>
+            <button class="nav-btn next" onclick="moveSlide(1, 'slider-alcoba')">&#10095;</button>
+        </div>
+
+
+        <div class="section-divider" id="oficina"> 
+            <h2>Muebles de Oficina</h2>
+            <div class="glow-line"></div>
+        </div>
+        <div class="gallery-wrapper">
+            <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-oficina')">&#10094;</button>
+            <ul class="container" id="slider-oficina"> 
+                <li class="active">
+                    <img src="5.jpg" alt="Escritorio">
+                    <div class="content"><span><h2>Escritorio Pro</h2><p>Madera maciza.</p></span></div>
+                </li>
+                <li>
+                    <img src="2.jpg" alt="Silla">
+                    <div class="content"><span><h2>Silla Ergo</h2><p>Máximo soporte.</p></span></div>
+                </li>
+            </ul>
+            <button class="nav-btn next" onclick="moveSlide(1, 'slider-oficina')">&#10095;</button>
+        </div>
+
+
+        <div class="section-divider" id="paletacolores">
+            <h2>Paleta de colores</h2>
+            <div class="glow-line"></div>
+        </div>
+        <div class="gallery-wrapper">
+            <button class="nav-btn prev" onclick="moveSlide(-1, 'slider-paletacolores')">&#10094;</button>
+            <ul class="container" id="slider-paletacolores">
+                <li class="active">
+                    <img src="4.jpg" alt="">
+                    <div class="content"><span><h2>Color 1</h2><p>Diseño exclusivo.</p></span></div>
+                </li>
+                <li class="active">
+                    <img src="5.jpg" alt="">
+                    <div class="content"><span><h2>Color 2</h2><p>Diseño exclusivo.</p></span></div>
+                </li>
+            </ul>
+            <button class="nav-btn next" onclick="moveSlide(1, 'slider-paletacolores')">&#10095;</button>
+        </div>
+
+
+         <section class="stats-banner">
+            <div class="stats-container">
+            <div class="stat-item">
+                <h2>+150</h2>
+                <p>Proyectos Entregados</p>
+            </div>
+            <div class="stat-item">
+                <h2>10</h2>
+                <p>Años de Experiencia</p>
+            </div>
+            <div class="stat-item">
+                <h2>100%</h2>
+                <p>Clientes Satisfechos</p>
+            </div>
+            </div>
+        </section>
+
+
+
+        <form class="glass-card" id="whatsapp-form">
+            <h3>Contáctanos</h3>
+            <div class="input-group">
+                <input type="text" id="nombre" placeholder="Tu Nombre" required>
+                <input type="tel" id="telefono" placeholder="Tu WhatsApp (ej: 300...)" required>
+            </div>
+            <textarea id="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
+            <button type="button" onclick="sendToWhatsApp()">Enviar Mensaje</button>
+        </form>
+        <footer style="padding: 40px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); width: 100%;">
+            <p style="color: rgba(255,255,255,0.5); font-size: 1rem;">
+                © 2026 Adrian M&M - Carpintería de Diseño. <br>
+                Popayán - Páez, Cauca, Colombia.
+            </p>
+            <div style="margin-top: 15px;">
+                <a href="#" style="color: #00dbde; margin: 0 10px; text-decoration: none;">Instagram</a>
+                <a href="#" style="color: #fc00ff; margin: 0 10px; text-decoration: none;">Facebook</a>
+            </div>
+            </footer>
+    </main>
+
+    <script>
+
+        function verFotos(idSeccion) {
+        const seccion = document.getElementById(idSeccion);
+        seccion.style.display = "block"; // Muestra las fotos
+        seccion.scrollIntoView({ behavior: 'smooth' }); // Te lleva suavemente a ellas
+        }
+
+        function cerrarFotos(idSeccion, idCategoria) {
+        const seccion = document.getElementById(idSeccion);
+        seccion.style.display = "none"; // Oculta las fotos
+    
+        // Te devuelve a la categoría principal (Sala, Comedor, etc.)
+        document.getElementById(idCategoria).scrollIntoView({ behavior: 'smooth' });
+        }
+        function toggleMenu() {
+        document.getElementById("categoryMenu").classList.toggle("show");
+        }
+
+       // Cerrar el menú si el usuario hace clic fuera de él
+       window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+         var dropdowns = document.getElementsByClassName("dropdown-content");
+         for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+        // Función para mover cada galería por separado
+        function moveSlide(direction, sliderId) {
+            const slider = document.getElementById(sliderId);
+            const slides = slider.querySelectorAll('li');
+            let currentIdx = Array.from(slides).findIndex(s => s.classList.contains('active'));
+            
+            slides[currentIdx].classList.remove('active');
+            currentIdx = (currentIdx + direction + slides.length) % slides.length;
+            slides[currentIdx].classList.add('active');
+            
+            const offset = slides[currentIdx].offsetLeft - (slider.offsetWidth / 2) + (slides[currentIdx].offsetWidth / 2);
+            slider.scrollTo({ left: offset, behavior: 'smooth' });
+        }
+
+        // Función para WhatsApp
+        function sendToWhatsApp() {
+          const nombre = document.getElementById('nombre').value;
+          const mensaje = document.getElementById('mensaje').value;
+    
+        if(!nombre || !mensaje) {
+           alert("Por favor, llena tu nombre y el mensaje antes de enviar.");
+        return;
+        }
+    
+        const miNumero = "573136317803"; 
+        const texto = `Hola Adrián, soy ${nombre}. Consulta: ${mensaje}`;
+        window.open(`https://wa.me/${miNumero}?text=${encodeURIComponent(texto)}`, '_blank');
+     }
+
+        window.addEventListener('scroll', () => {
+        const reveals = document.querySelectorAll('.section-divider, .gallery-wrapper, .glass-card');
+        reveals.forEach(el => {
+        const windowHeight = window.innerHeight;
+        const revealTop = el.getBoundingClientRect().top;
+        if (revealTop < windowHeight - 100) {
+            el.classList.add('active');
+        }
+        });
+        });
+        // Ejecutar una vez al cargar para lo que ya está en pantalla
+         window.dispatchEvent(new Event('scroll'));
+
+
+         // Función para abrir/cerrar el menú de ajustes
+function toggleAjustes() {
+    document.getElementById("ajustesMenu").classList.toggle("show");
+}
+
+// Función para cambiar el modo
+function setModo(modo) {
+    if (modo === 'claro') {
+        document.body.classList.add('light-mode');
+    } else {
+        document.body.classList.remove('light-mode');
+    }
+    // Cerramos el menú después de elegir
+    toggleAjustes();
+}
+
+// Cerrar menús si se hace clic fuera de ellos
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+    </script>
+
+    <a href="https://wa.me/573136317803" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="width:30px;">
+</a>
+</body>
+</html>
