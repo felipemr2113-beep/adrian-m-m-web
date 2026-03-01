@@ -1197,3 +1197,46 @@ body.light-mode textarea {
         line-height: 1.4 !important;
     }
 }
+
+/* --- CORRECCIÓN DE GALERÍA Y ELIMINACIÓN DE BORDES NEGROS --- */
+
+.container li {
+    background: transparent !important; /* Quitamos el fondo negro de la tarjeta */
+    border: none !important;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container li img {
+    width: 100% !important;
+    height: 100% !important;
+    /* 'cover' estira la foto para que llene todo el cuadro sin dejar bordes negros */
+    object-fit: cover !important; 
+    display: block !important;
+}
+
+/* Si usas un efecto de brillo o sombra que genera el recuadro, esto lo quita */
+.container li::after, .container li::before {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    /* Ajustamos el contenedor para que las fotos fluyan hacia abajo */
+    .container {
+        display: flex !important;
+        flex-direction: column !important; /* Una debajo de otra en móvil */
+        height: auto !important; /* Que crezca según la cantidad de fotos */
+        gap: 20px;
+        width: 100% !important;
+        padding: 10px;
+    }
+
+    .container li {
+        width: 100% !important;
+        height: 300px !important; /* Altura fija para que todas se vean iguales */
+        position: relative !important;
+        flex-shrink: 0; /* Evita que se aplasten */
+    }
+}
